@@ -1,6 +1,7 @@
 body { 
     text-align: center;
-   background-image:linear-gradient(100deg, #6bc8cd,#18d7b7);
+   background-image:linear-gradient(100deg, #67cadb,#0dd8bd);
+   max-width: 100%;
 }
 .pag-inicial{
 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -16,8 +17,23 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 20px;
 }
 .botões a:hover {
-   background-color: rgb(255, 117, 117);
+   background-color: rgb(117, 255, 214);
 }
-.img {
-    width: 20%;
+.botões a{
+    text-decoration: none;
+    color: azure;
+    background-color: #041613;
+    border-radius: 12%;
+    margin-bottom: 20%;
+    padding: 10px;
+}
+.img{
+    width: 25%;
+}
+.botões2 a{
+    text-decoration: none;
+    color: azure;
+    border-radius: 12%;
+    margin-bottom: 20%;
+    padding: 10px;
 }

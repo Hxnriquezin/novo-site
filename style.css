@@ -12,6 +12,7 @@ body#login{
     text-align: center;
    background-image:linear-gradient(100deg, #67cadb,#0dd8bd);
    max-width: 100%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .pag-inicial{
 font-family: Verdana, Geneva, Tahoma, sans-serif;

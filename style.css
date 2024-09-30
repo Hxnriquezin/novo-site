@@ -10,7 +10,7 @@ body#site{
 }
 body#login{ 
     text-align: center;
-   background-image:linear-gradient(100deg, #67cadb,#0dd8bd);
+   background-image:linear-gradient(100deg, #67cadb,#0ae7ca);
    max-width: 100%;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -28,11 +28,11 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 20px;
 }
 .botões a:hover {
-   background-color: rgb(117, 255, 214);
+   background-color: rgb(17, 226, 181);
 }
 .botões a{
     text-decoration: none;
-    color: azure;
+    color: rgb(255, 255, 255);
     background-color: #041613;
     border-radius: 12%;
     margin-bottom: 20%;
@@ -44,15 +44,16 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .botões2 a{
     text-decoration: none;
     color: azure;
-    border-radius: 12%;
-    margin-bottom: 20%;
-    padding: 10px;
+    border-radius: 20%;
+    margin-bottom: 40%;
+    padding: 20px;
+    display: flex;
+    display: inline-flex;
 }
 .botões2 a :hover {
     background-color:rgb(117, 255, 214);
-    
 }
-
 .img2 img {
-  width: 30%;  
+  width: 25%; 
+ padding: 20px;
 }

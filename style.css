@@ -1,14 +1,14 @@
 body#site{ 
-    text-align: center;
+    margin-inline: 25px;
+   text-align: center;
    background-image:linear-gradient(100deg, #67cadb,#0dd8bd);
    max-width: 100%;
    height: 100vh;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.tela-esquerda{
-    height: 100vh;
-}
+
 body#login{ 
+    margin-inline: 25px;
     text-align: center;
    background-image:linear-gradient(100deg, #67cadb,#0ae7ca);
    max-width: 100%;
@@ -35,12 +35,13 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(255, 255, 255);
     background-color: #041613;
     border-radius: 12%;
-    margin-bottom: 20%;
+    margin-bottom: 12%;
     padding: 10px;
 }
 .img1 img{
     width: 25%;
 }
+
 .botões2 a{
     text-decoration: none;
     color: azure;

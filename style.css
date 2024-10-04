@@ -21,7 +21,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     display: flex;
     display: inline-flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-decoration: none;
     margin-bottom: 20%;
     padding: 10px;
@@ -41,19 +41,28 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .img1 img{
     width: 25%;
 }
-
+.botões2 {
+    text-align: center;
+    display: content;
+    display: grid;
+    margin-bottom: 10px;
+    text-decoration: none;
+    margin-bottom: 20%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.botões2 a :hover{
+    background-color:rgb(17, 255, 214);
+}
 .botões2 a{
     text-decoration: none;
-    color: azure;
-    border-radius: 20%;
-    margin-bottom: 40%;
-    padding: 20px;
-    display: flex;
-    display: inline-flex;
+    color: rgb(255, 255, 255);
+    background-color: #041613;
+    border-radius: 12%;
+    margin-bottom: 12%;
+    padding: 10px;
 }
-.botões2 a :hover {
-    background-color:rgb(117, 255, 214);
-}
+
 .img2 img {
   width: 25%; 
  padding: 20px;

@@ -47,9 +47,8 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     margin-bottom: 20%;
     padding: 10px;
-
 }
-.botões2 a :hover{
+.botões2 a:hover{
     background-color:rgb(17, 255, 214);
 }
 .botões2 a{
@@ -68,4 +67,12 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .img2 img {
   width: 25%; 
  padding: 20px;
+}
+
+.entrar {
+    font-weight: 1000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    font-weight: 1000;
 }

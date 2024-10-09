@@ -142,4 +142,12 @@ body#novidades {
 .menu-list li{
     background-color: black;
     width: 17%;
+    padding: 12px;
+    font-weight: 700;
+}
+.img6 img {
+width: 8%;
+}
+.img6 img:hover{
+    transform: scale(1.05);
 }

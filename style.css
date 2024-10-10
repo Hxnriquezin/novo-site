@@ -144,6 +144,7 @@ body#novidades {
     width: 17%;
     padding: 12px;
     font-weight: 700;
+    max-width: 100%;
 }
 .img6 img {
 width: 8%;
@@ -151,3 +152,17 @@ width: 8%;
 .img6 img:hover{
     transform: scale(1.05);
 }
+body#post{
+    background-image:linear-gradient(100deg, #1addf7,hwb(172 0% 0%));
+    margin-inline: 45px;
+    text-decoration: none;
+    text-align: center;
+    max-width: 100%;
+}
+.img7 img {
+    width: 15%;
+}
+.img8 img {
+    width: 10%;
+}
+

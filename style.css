@@ -165,4 +165,18 @@ body#post{
 .img8 img {
     width: 10%;
 }
-
+.img8 img:hover{
+    transform: scale(1.05);
+}
+.custom-select{
+appearance: none;
+opacity: 0.999;
+padding: 10px;
+border: inline 10px;
+}
+.input1{
+    appearance: none;
+    opacity: 0.999;
+    padding: 10px;
+    border: inline 10px;
+}

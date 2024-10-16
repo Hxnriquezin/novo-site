@@ -180,3 +180,9 @@ border: inline 10px;
     padding: 10px;
     border: inline 10px;
 }
+#drop_zone {
+    border: 5px solid blue;
+    width: 200px;
+    height: 100px;
+  }
+  

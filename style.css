@@ -1,13 +1,12 @@
 body#site,#login{ 
     margin-inline: 45px;
    text-align: center;
-   background-image:linear-gradient(100deg, #1addf7,hwb(172 0% 0%));
+   background-image:linear-gradient(100deg, #2bf2f9,hwb(172 0% 0%));
    max-width: 100%;
    height: 100vh;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   padding: 12px;
 }
-
-
 .pag-inicial{
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -33,7 +32,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
 }
 .img1 img{
-    width: 25%;
+    width: 21%;
 }
 .botões2 {
     text-align: center;
@@ -81,7 +80,7 @@ input{
 
 body#novidades {
     margin-inline: 45px;
-    background-image:linear-gradient(100deg, #1addf7,hwb(172 0% 0%));
+    background-image:linear-gradient(100deg, #2bf2f9,hwb(172 0% 0%));
     max-width: 100%;
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -111,6 +110,7 @@ body#novidades {
     text-align: left;
     list-style: none; 
     padding: 0;
+    text-align: center;
 }
 .menurapido .menu-list a {
     text-decoration: none; 
@@ -166,7 +166,7 @@ body#post{
     width: 10%;
 }
 .img8 img:hover{
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 .custom-select{
 appearance: none;
@@ -181,7 +181,7 @@ border: inline 10px;
     border: inline 10px;
 }
 #drop_zone {
-    border: 5px solid blue;
+    border: 5px solid rgb(0, 0, 0);
     width: 200px;
     height: 100px;
   }

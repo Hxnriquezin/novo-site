@@ -9,6 +9,18 @@ def home():
 @app.route ('/login')
 def login():
     return render_template('login.html')
+@app.route ('/cadastro')
+def cadastro():
+   return render_template ('cadastro.html')
+
+@app.route ('/novidades')
+def novidades ():
+    return render_template ('novidades.html')
+
+@app.route ('/post')
+def post ():
+    return render_template ('post.html')
 
 if __name__ =='__main__': 
     app.run(debug=True)
+ 

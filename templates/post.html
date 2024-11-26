@@ -1,75 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="console.png" type="image/x-icon">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="shortcut icon" href="static/img/console.png" type="image/x-icon">
     <title>Fazer post</title>
 </head>
 <body id="post">
-    <div class="img7">
-<img src="static/img/console.png" alt="">
-    </div>
-     <h1>Criar post</h1>
-     <div class="img8">
-        <img src="static/img/imagem8.png" alt="">
-     </div>
-     <div class="input1">
-    <input type="text"placeholder= "insira o conteúdo do post">
-    </div>
-    <h2>Pesquise um jogo</h2>
-    <div class="input2">
-     <input type="text"placeholder= "pesquise um jogo">
-     </div>
-        <div class="custom-select">
-            <select>
-              <option value="0"disabled selected hidde>selcione um jogo:</option>
-              <option value="1">God of War</option>
-              <option value="2">Bloodborn</option>
-              <option value="3">Elden Ring</option>
-            </select>
-          </div>
-          <div
-          id="drop_zone"
-          ondrop="dropHandler(event);"
-          ondragover="dragOverHandler(event);">
-          <p>Anexe seu post</p>
+    <div class="container">
+        <div class="img7">
+            <img src="static/img/img.png" alt="Console">
         </div>
+        <h1>Criar Post</h1>
+        <div class="img8">
+          
+        </div>
+        <div class="input1">
+            <input type="text" placeholder="Insira o conteúdo do post">
+        </div>
+        <h2>Pesquise um jogo</h2>
+        <div class="input2">
+            <input type="text" placeholder="Pesquise um jogo">
+        </div>
+        <div class="custom-select">
+          <select>
+              <option value="0" disabled selected hidden>Selecione um jogo</option>
+              <option value="1">God of War</option>
+              <option value="2">Raimbow six siege</option>
+              <option value="3">Elden Ring</option>
+              <option value="4">The Witcher 3</option>
+              <option value="5">Fortnite</option>
+              <option value="6">Horizon Zero Dawn</option>
+              <option value="7">Red Dead Redemption 2</option>
+              <option value="8">Assassin's Creed Valhalla</option>
+              <option value="9">Uncharted 4</option>
+              <option value="10">Sekiro: Shadows Die Twice</option>
+          </select>
+      </div>
+      
+        <div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+            <p>Anexe seu post</p>
+        </div>
+    </div>
 
-        <script>
-          function dropHandler(ev) {
-  console.log("File(s) dropped");
+    <script>
+        function dropHandler(ev) {
+            console.log("File(s) dropped");
+            ev.preventDefault();
+            if (ev.dataTransfer.items) {
+                for (var i = 0; i < ev.dataTransfer.items.length; i++) {
+                    if (ev.dataTransfer.items[i].kind === "file") {
+                        var file = ev.dataTransfer.items[i].getAsFile();
+                        console.log("... file[" + i + "].name = " + file.name);
+                    }
+                }
+            } else {
+                for (var i = 0; i < ev.dataTransfer.files.length; i++) {
+                    console.log("... file[" + i + "].name = " + ev.dataTransfer.files[i].name);
+                }
+            }
+        }
 
-  // Impedir o comportamento padrão (impedir que o arquivo seja aberto)
-  ev.preventDefault();
-
-  if (ev.dataTransfer.items) {
-    // Use a interface DataTransferItemList para acessar o (s) arquivo (s)
-    for (var i = 0; i < ev.dataTransfer.items.length; i++) {
-      // Se os itens soltos não forem arquivos, rejeite-os
-      if (ev.dataTransfer.items[i].kind === "file") {
-        var file = ev.dataTransfer.items[i].getAsFile();
-        console.log("... file[" + i + "].name = " + file.name);
-      }
-    }
-  } else {
-    // Use a interface DataTransfer para acessar o (s) arquivo (s)
-    for (var i = 0; i < ev.dataTransfer.files.length; i++) {
-      console.log(
-        "... file[" + i + "].name = " + ev.dataTransfer.files[i].name,
-      );
-    }
-  }
-}
-function dragOverHandler(ev) {
-  console.log("File(s) in drop zone");
-
-  // Impedir o comportamento padrão (impedir que o arquivo seja aberto)
-  ev.preventDefault();
-}
-
-        </script>
-        
+        function dragOverHandler(ev) {
+            console.log("File(s) in drop zone");
+            ev.preventDefault();
+        }
+    </script>
 </body>
 </html>
